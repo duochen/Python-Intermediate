@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 x_values = list(range(1000))
 squares = [x**2 for x in x_values]
-plt.scatter(x_values, squares, s=10)
+plt.scatter(x_values, squares, c=squares, cmap=plt.cm.Blues, edgecolor='none', s=10)
 
 plt.title("Square Numbers", fontsize=24)
 plt.xlabel("Value", fontsize=18)
